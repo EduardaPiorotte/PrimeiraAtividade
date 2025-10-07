@@ -1,81 +1,124 @@
 
-/*Estilo Geral*/
+/* Estilo Geral - Base para telas maiores */
 body {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;    
+    font-family: 'Arial Narrow Bold', sans-serif; /* Priorizei uma fonte padrão, Impact é mais forte */
     line-height: 1.6;
     margin: 0;
-    padding:0;
-    background-color:rgb(229, 142, 202);
-    background-image: linear-gradient(rgb(107, 150, 185), rgb(63, 203, 100));
-    color:rgb(41, 39, 39);
-    
-} .minha-imagem {
-  position: absolute;
-  margin: 0 auto; 
-  top: 10;
-  left: 10;
+    padding: 0;
+    /* Seu fundo com gradiente */
+    background-image: linear-gradient(rgb(107, 150, 185), rgb(153, 114, 148));
+    color: rgb(41, 39, 39);
 }
 
+/* Remove estilos padrão de listas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* =======================================
+   2. CENTRALIZAÇÃO E LAYOUT
+   ======================================= */
+/* O CONTAINER CENTRALIZA TODO O CONTEÚDO DENTRO DO <main> */
 .container {
-    max-width: 1000px; /* Largura máxima para a página */
-    margin: 0 auto;    /* Centraliza o contêiner */
+    max-width: 1000px; /* Largura máxima para evitar esticamento em telas grandes */
+    margin: 0 auto;    /* Centraliza o bloco na tela */
     padding: 20px;     /* Espaçamento interno */
 }
-ul{
-    list-style: none;
-    padding: 10px 15px;
-    margin: 5px;
-    font-style: normal;
-    width: 200px;
-    float: left;
-    
-}
-li{
-    padding: 10px;
-    margin-bottom: 5px;
-    background-color: rgb(184, 184, 184);
-    border: 1px solid #aca7a7;
-    border-radius: 15px;    
+
+/* =======================================
+   3. NAVEGAÇÃO (<nav>) e RODAPÉ (<footer>)
+   ======================================= */
+nav {
+    background-color: rgb(187, 187, 187); 
+    padding: 10px 0;
+    border-bottom: 2px solid #aca7a7;
 }
 
-/*Cabeçalho*/
+nav ul {
+    /* Flexbox para alinhar os links horizontalmente */
+    display: flex;
+    justify-content: center; 
+}
 
-h1{
-    text-align: left;
+nav li {
+    /* Limpa estilos que estavam na lista (li) para usar apenas no <a> */
+    background: none; 
+    border: none; 
+    border-radius: 0;
+    margin: 0 15px; 
+    padding: 0;
+}
+
+nav a {
     color: rgb(41, 39, 39);
-    margin-left: 250px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+    display: block; /* Garante que o padding funcione */
+}
+
+nav a:hover {
+    color: rgb(107, 150, 185);
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333232; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; 
+}
+
+footer p, footer a {
+    color: #fff;
+    margin: 5px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    background: none;
+    border: none;
+    margin: 0 10px;
+}
+
+/* =======================================
+   4. TIPOGRAFIA E ELEMENTOS DE CONTEÚDO
+   ======================================= */
+h1 {
+    text-align: center; 
+    color: rgb(41, 39, 39);
     padding: 10px;
     font-size: 3.0em;
     border: 2px solid #aca7a7;
-    width: 900px;
-    border-radius: 10px;
     background-color: rgb(187, 187, 187);
-    
+    margin: 20px auto; /* Centraliza o H1 como um bloco */
+    border-radius: 10px;
+    width: fit-content; /* Largura se ajusta ao texto (moderno e responsivo) */
 }
-h2{
+
+h2, h3 {
     text-align: center;
-    font-family:Impact;
-    color:#333232;
+    font-family: Impact;
+    color: #333232;
     padding: 5px;
-    margin-left: 250px;
-    margin-right: 10px;
-}
-h3 {
-    font-family: impact;
-    font-weight: bold;
-    
-    color: rgb(41, 39, 39);
-    padding: 5px;
-    margin: 30px;
+    margin: 10px 0;
 }
 
 p {
-    font-family: arial;
-    margin: 30px;
-    padding: 5;
-    margin-left: 30px;
+    font-family: Arial, sans-serif; /* Fonte mais legível para o corpo de texto */
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center; /* Centraliza os parágrafos */
 }
-/* Links */
+
 a {
     color: #282928;
     text-decoration: none;
@@ -85,17 +128,51 @@ a {
 a:hover {
     text-decoration: underline;
 }
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	font-family: 'Lato', sans-serif;
-	line-height: 1;
+
+/* =======================================
+   5. IMAGENS
+   ======================================= */
+/* Imagem de Perfil (usando a classe 'minha-imagem' que corrigimos no HTML) */
+.minha-imagem {
+    display: block; 
+    margin: 20px auto; /* Centraliza a imagem */
+    width: 200px; 
+    height: 200px; /* Definindo altura fixa */
+    
+    /* Acabamento profissional */
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    object-fit: cover; /* Garante que a imagem preencha sem distorção */
 }
 
-body {
-	background-color: #F5F6F8;
-	overflow: hidden;
+/* =======================================
+   6. MEDIA QUERIES (Responsividade)
+   ======================================= */
+@media screen and (max-width: 768px) {
+    
+    /* Ajusta a navegação para ser mais amigável em celular */
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    nav li {
+        width: 90%; 
+        text-align: center;
+        background-color: rgb(184, 184, 184); 
+        border-radius: 5px;
+        margin: 5px 0;
+        border: 1px solid #aca7a7;
+    }
+    
+    /* Ajusta o tamanho da fonte para leitura em telas pequenas */
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    /* Garante que o container não tenha padding muito grande */
+    .container {
+        padding: 10px;
+    }
 }
-	
 	
