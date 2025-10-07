@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Eduarda</title>
 </head>
+
 <body>
-        <nav>
-             <ul>
-                 <li><a href="#hero">Inicio</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#skills"></a>Skills</li>
-                <li><a href="#contato"></a>Contato</li>
-
-                <li> Services</li>
-                <li>projects</li>
-                <li>skills</li>
-                <li>Contato</li>
-                <li>footer</li>
-
-             </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="container"> 
         
-            <section id="#hero">
-            <h1>Olá, sou a Eduada</h1>
-            <p>Gosto muito de aprender e vi na tecnlogia um grande potencial.</p>
-        </section>
+            <section id="hero">
+                <h1>Olá, sou a Eduarda</h1>
+                <p>Gosto muito de aprender e vi na tecnologia um grande potencial.</p>
+            </section>
 
-        <section id="#about">
-            <h2>sobre mim</h2>
-            <p>Sempre gostei de aprender e a tecnologia é muito promissora, faço ciência da computação na Instituição Newton Paiva</p>
-            <img src="https://tse4.mm.bing.net/th/id/OIP.aeiUjJ81S1BgzGhPhBgo5AHaHa?pid=Api&P=0&h=180">
-        </section>
-         
-        <section>
-            <h2>Serviços</h2>
-             <article>
+
+            <section id="about"> 
+                <h2>sobre mim</h2>
+                <p>Apaixonada pelo aprendizado e impulsionada pela inovação, estou construindo minha base no universo da tecnologia. Sou estudante de Ciência da Computação na prestigiada Instituição Newton Paiva, onde desenvolvo uma visão sólida de lógica de programação e arquitetura de sistemas.
+
+Acredito que a tecnologia não é apenas um campo de estudo, mas uma ferramenta poderosa para a resolução de problemas complexos. Meu objetivo é aplicar o conhecimento adquirido — de Java a estruturas web — para criar soluções eficazes e modernas.</p>
+                <div id="img-perfil">
+                    <img class="minha-imagem" src="https://tse4.mm.bing.net/th/id/OIP.aeiUjJ81S1BgzGhPhBgo5AHaHa?pid=Api&P=0&h=180">
+                </div>
+            </section>
+
+
+            <section id="servicos"> 
+                <h2>Serviços</h2>
                 <h3>Desenvolvimento web</h3>
                 <p>criação de sites responsivos e moderno</p>
-             </article>
 
-             <h3>Design UX/UI</h3>
-             <p>Design focado na experiencia do usuário</p>
-        </section>
+                <h3>Design UX/UI</h3>
+                <p>Design focado na experiencia do usuário</p>
+            </section>
 
-        <section id="#projetos">
-            <h2>Projetos recentes</h2>
-            <img src="https://media.licdn.com/dms/image/v2/D5622AQHWryi4fDvyOQ/feedshare-shrink_2048_1536/B56ZXFO1BXHEAo-/0/1742770754508?e=1759968000&v=beta&t=F0UTDrzEiPqAhQTzBWlYBcwXIceg8OHoiV6Z30JBz3o">
 
-        </section>
+            <section id="projetos">
+                <h2>Projetos recentes</h2>
+                <img src="https://media.licdn.com/dms/image/v2/D5622AQHWryi4fDvyOQ/feedshare-shrink_2048_1536/B56ZXFO1BXHEAo-/0/1742770754508?e=1759968000&v=beta&t=F0UTDrzEiPqAhQTzBWlYBcwXIceg8OHoiV6Z30JBz3o">
+            </section>
+            
+            <section id="skills">
+                <h2>Habilidades</h2>
+                <div>
+                    <h3>Habilidades difíceis</h3>
+                </div>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                </ul>
+                <div>
+                    <h3>Habilidades Interpessoais</h3>
+                    <ul>
+                        <li>Trabalho bem em equipe</li>
+                        <li>Criativa</li>
+                        <li>Organizada</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section id="#skills"></section>
-         <h2>Habilidades</h2>
-         <div>
-            <h3>Habilidades difíceis</h3>
-         </div>
-         <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
+            <section id="contato">
+                <h2>Entre em contato</h2>
+                <form>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Eduarda Gomes" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required> 
+                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            
+        </div> </main>
     
-         </ul>
-        <div>
-            <h3>Habilidades Interpessoais</h3>
-            <ul>
-                <li>Trabalho bem em equipe</li>
-                <li>Criativa</li>
-                <li>Organizada</li>
-            </ul>
-        </div>
-
-        <section id="#contato">
-            <h2>Entre em contato</h2>
-            <form>
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="Eduarda Gomes" required>
-                
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="piorotteeduarda@gmail.com" required>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                  <button type="submit">Enviar</button>
-            </form>
-        </section>
-               <footer>
-               <p>&copy; 2025 Eduarda. Todos os direitos reservados.</p>
-          <ul>
-               <li><a href="https://linkedin.com/seuuser">LinkedIn</a></li>
-               <li><a href="https://github.com/seuuser">GitHub</a></li>
-          </ul>
-</footer>
-        
+    <footer>
+        <p>&copy; 2025 Eduarda. Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="https://linkedin.com/seuuser">LinkedIn</a></li>
+            <li><a href="https://github.com/seuuser">GitHub</a></li>
+        </ul>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
-</html>
 
+</html>
