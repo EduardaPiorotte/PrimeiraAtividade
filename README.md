@@ -13,7 +13,7 @@ Este portfólio foi construído utilizando as principais tecnologias do desenvol
 
 * **HTML5:** Usado para estruturar o conteúdo (seções, títulos, formulário).
 * **CSS3:** Responsável pela estilização, layout flexível (Flexbox) e centralização do conteúdo.
-* **JavaScript:** (Se você tiver adicionado alguma função como um menu mobile ou validação de formulário.)
+* **JavaScript:** (menu mobile)
 * **Git & GitHub:** Utilizados para versionamento e controle do código.
 * **GitHub Pages:** Plataforma de hospedagem gratuita utilizada para a publicação online.
 
@@ -34,6 +34,3 @@ Para rodar o projeto em sua máquina local, siga os passos abaixo:
 * **Curso:** Ciência da Computação
 * **Instituição:** Newton Paiva
 
-* **Nome:** Eduarda Piorotte
-* **Curso:** Ciência da Computação
-* **Instituição:** Newton Paiva
