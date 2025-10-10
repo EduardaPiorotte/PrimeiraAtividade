@@ -1,5 +1,4 @@
 
-/* Estilo Geral - Base para telas maiores */
 body {
     font-family: 'Arial Narrow Bold', sans-serif; /* Priorizei uma fonte padrão, Impact é mais forte */
     line-height: 1.6;
@@ -132,7 +131,7 @@ a:hover {
 /* =======================================
    5. IMAGENS
    ======================================= */
-/* Imagem de Perfil (usando a classe 'minha-imagem' que corrigimos no HTML) */
+/* Imagem de Perfil */
 .minha-imagem {
     display: block; 
     margin: 20px auto; /* Centraliza a imagem */
@@ -144,10 +143,93 @@ a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
     object-fit: cover; /* Garante que a imagem preencha sem distorção */
 }
+.cards-container {
+    /* Flexbox para alinhar lado a lado e centralizar */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 50px; /* Espaço entre os dois cards */
+    padding: 40px 0;
+}
+
+.card {
+    /* Fundo Branco para flutuar sobre o gradiente */
+    background-color: #ffffff; 
+    border-radius: 15px;
+    /* Sombra suave e escura para o efeito 3D */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+    padding: 40px 25px;
+    width: 320px; /* Largura definida para cada card */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); 
+}
+
+/* Estilo do Ícone */
+.icone-card {
+    font-size: 4em; 
+    color: #5D5DFF; /* Cor de destaque lilás/roxo */
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Título dentro do Card */
+.card h3 {
+    font-size: 1.6em;
+    color: #1a1a1a; /* Escuro no fundo branco */
+    margin-bottom: 5px;
+}
+
+/* Nome da Instituição */
+.instituicao {
+    font-weight: 700;
+    color: #5D5DFF; 
+    margin: 5px 0;
+}
+
+/* Status (Cursando/Concluído) */
+.status {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Parágrafos de Descrição */
+.card p {
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    color: #333;
+}
+/* Seleciona todas as imagens dentro da seção de projetos */
+#projetos img {
+    width: 300px;      /* largura desejada */
+    height: auto;      /* mantém proporção */
+    margin: 10px;      /* espaçamento entre imagens */
+    border-radius: 10px; /* opcional: cantos arredondados */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* opcional: sombra */
+    display: inline-block; /* permite que fiquem lado a lado */
+    object-fit: cover;  /* garante que a imagem não distorça */
+}
+
+/* Responsivo para celular */
+@media screen and (max-width: 768px) {
+    #projetos img {
+        width: 90%;    /* ocupa quase toda a tela */
+        margin: 10px auto; 
+        display: block; /* centraliza */
+    }
+}
+
+
 
 /* =======================================
    6. MEDIA QUERIES (Responsividade)
    ======================================= */
+   
 @media screen and (max-width: 768px) {
     
     /* Ajusta a navegação para ser mais amigável em celular */
@@ -175,4 +257,31 @@ a:hover {
         padding: 10px;
     }
 }
-	
+/* =======================================
+   7. AJUSTES DE CENTRALIZAÇÃO (Habilidades)
+   ======================================= */
+
+/* Centralização Específica para Listas de Habilidades */
+#skills ul {
+    /* Define a largura máxima para o conteúdo */
+    width: fit-content; 
+    /* Centraliza o bloco UL na tela */
+    margin: 0 auto;
+    /* Alinha o texto dentro da UL */
+    text-align: center; 
+}
+
+/* Garante que os itens da lista fiquem com a largura do texto */
+#skills li {
+    list-style: none; /* Remove bolinhas */
+    padding: 2px 0;
+    text-align: center; /* Centraliza o texto do item */
+}
+
+
+/* =======================================
+   8. MEDIA QUERIES (Responsividade)
+   ======================================= */
+@media screen and (max-width: 768px) {
+    /* ... (seu código de responsividade) ... */
+}
