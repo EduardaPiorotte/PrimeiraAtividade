@@ -35,7 +35,7 @@
 
 Acredito que a tecnologia não é apenas um campo de estudo, mas uma ferramenta poderosa para a resolução de problemas complexos. Meu objetivo é aplicar o conhecimento adquirido — de Java a estruturas web — para criar soluções eficazes e modernas.</p>
                 <div id="img-perfil">
-                    <img class="minha-imagem" src="https://tse4.mm.bing.net/th/id/OIP.aeiUjJ81S1BgzGhPhBgo5AHaHa?pid=Api&P=0&h=180">
+                    <img class="minha-imagem" src="imagem/eu.jpeg">
                 </div>
             </section>
 
@@ -43,17 +43,53 @@ Acredito que a tecnologia não é apenas um campo de estudo, mas uma ferramenta 
             <section id="servicos"> 
                 <h2>Serviços</h2>
                 <h3>Desenvolvimento web</h3>
-                <p>criação de sites responsivos e moderno</p>
+                <p>Criação de sites responsivos e moderno</p>
+                <p>Desenvolvimento web (Front-end e Back-end)</p> 
+                <p>Desenvolvimento de sistemas Java</p> 
+                <p>Criação de layouts responsivos com HTML, CSS e JavaScript</p>
+                <p>Versionamento de código com Git e GitHub</p>
 
-                <h3>Design UX/UI</h3>
+                <h3>Design </h3>
                 <p>Design focado na experiencia do usuário</p>
+                <p>Prototipagem no Figma</p>
+
             </section>
 
 
             <section id="projetos">
                 <h2>Projetos recentes</h2>
-                <img src="https://media.licdn.com/dms/image/v2/D5622AQHWryi4fDvyOQ/feedshare-shrink_2048_1536/B56ZXFO1BXHEAo-/0/1742770754508?e=1759968000&v=beta&t=F0UTDrzEiPqAhQTzBWlYBcwXIceg8OHoiV6Z30JBz3o">
+               <img src="imagem/analise.jpg">
+               <img src="imagem/frios.jpg">
+               <img src="imagem/banner3.jpg">
+
             </section>
+
+<section id="formacao">
+    <h2>Formação Acadêmica</h2>
+    
+    <div class="cards-container">
+    
+    <div class="card">
+        <i class="fas fa-graduation-cap icone-card"></i> 
+
+        <h3>Ciências da Computação</h3>
+        <p class="instituicao">Newton de Paiva Wyden</p>
+        <p class="status">Cursando</p>
+        <p>Graduação em andamento com foco em desenvolvimento de software, algoritmos e estruturas de dados.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-desktop icone-card"></i> 
+
+        <h3>Curso Profissionalizante</h3>
+        <p class="instituicao">CNI Técnico e Profissionalizante</p>
+        <p class="status">Concluído</p>
+        
+    </div>
+    
+    </div>
+</section>
+            
             
             <section id="skills">
                 <h2>Habilidades</h2>
@@ -75,19 +111,25 @@ Acredito que a tecnologia não é apenas um campo de estudo, mas uma ferramenta 
                 </div>
             </section>
 
-            <section id="contato">
+                 <section id="contato">
                 <h2>Entre em contato</h2>
-                <form>
+                <form id="contact-form">
                     <label for="nome">Nome completo:</label>
                     <input type="text" id="nome" name="nome" placeholder="Eduarda Gomes" required>
 
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required> 
+                    <input type="email" id="email" name="email" required>
                     
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+
                     <label for="mensagem">Mensagem:</label>
                     <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                    <button type="submit">Enviar</button>
+                    
+                    <button type="submit" id="submit-button">Enviar</button>
                 </form>
+                
+                <p id="feedback-message" style="margin-top: 15px; padding: 10px; border-radius: 5px; display: none;"></p>
             </section>
             
         </div> </main>
@@ -99,8 +141,17 @@ Acredito que a tecnologia não é apenas um campo de estudo, mas uma ferramenta 
             <li><a href="https://github.com/seuuser">GitHub</a></li>
         </ul>
     </footer>
+       
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+       (function() {
+          emailjs.init("wCEjYnmoLZ49m2OoM"); 
+       })();
+    </script>
     
     <script src="script.js"></script>
+
 </body>
 
 </html>
